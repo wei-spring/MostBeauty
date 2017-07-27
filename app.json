@@ -1,7 +1,9 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/daily/daily",
+    "pages/sport/sport"
   ],
   "window":{
     "backgroundTextStyle":"light",

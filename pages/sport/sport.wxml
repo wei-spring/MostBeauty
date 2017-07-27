@@ -1,0 +1,4 @@
+<!--sports.wxml-->
+<view class="container log-list">
+  <text class="log-item">微信运动</text>
+</view>
