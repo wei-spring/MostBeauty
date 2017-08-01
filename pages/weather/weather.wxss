@@ -1,0 +1,55 @@
+/* weather.wxss */
+.city-view{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.city-text{
+  margin: 15px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 18px
+}
+
+.weather-view{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sun-icon{
+  width: 70rpx;
+  height: 70rpx;
+  padding: 10rpx;
+}
+
+.temperature-text-1{
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 10rpx;
+}
+
+.temperature-text-2{
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 10rpx;
+}
+
+.temperature-text-2{
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 10rpx;
+}
+
+.temperature-text-3{
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 10rpx;
+}

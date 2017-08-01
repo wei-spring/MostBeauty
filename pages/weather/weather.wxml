@@ -1,0 +1,22 @@
+<!--weather.wxml-->
+<view>
+    <swiper style="margin: 25rpx;height: {{clientHeight?clientHeight+'px':'auto'}};" 
+      indicator-dots="{{indicatorDots}}" 
+      autoplay="{{autoplay}}">
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <view style="border-radius: 20rpx;height: {{clientHeight?clientHeight+'px':'auto'}};background-image: {{item}};background-size:cover;">
+            <view class="city-view">
+              <text class="city-text">北京*朝阳</text>  
+            </view>
+            <view class="weather-view">
+              <image class="sun-icon" src="../../image/sun.png" background-size="cover"></image>
+              <text class="temperature-text-1">晴</text>  
+              <text class="temperature-text-2">31℃</text>  
+              <text class="temperature-text-3">北风4级</text>  
+            </view> 
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>

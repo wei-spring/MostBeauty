@@ -1,0 +1,134 @@
+.contain{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.movie-title{
+  width: 100%;
+  background: #009688;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 10rpx;
+  padding-bottom: 20rpx;
+  text-align: center;
+}
+
+.movie-hot{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+
+.movie-hot-icon{
+  width: 40rpx;
+  height: 40rpx;
+  padding-top: 10rpx;
+}
+
+.movie-hot-text{
+  font-size: 14px;
+  line-height: 14px;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+}
+
+/*横向滑动的scroll-View 样式  */
+
+.hot_movie_scroll_x_box {
+ height: 350rpx;
+ white-space: nowrap;
+ display: flex;
+ overflow : auto;
+}
+
+.hot_movie_item_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx;
+}
+
+.hot_movie_box {
+ width: 250rpx;
+ height: 350rpx;
+ margin-right: 24rpx;
+ display: inline-block;
+}
+
+.hot_movie_image {
+ width: 135rpx;
+ height: 220rpx;
+}
+
+.hot_movie_name{
+  color: #696969;
+  font-size: 12px;
+  line-height: 12px;
+  padding-top: 15rpx;
+  padding-bottom: 10rpx;
+}
+
+.hot_movie_judge{
+  color: #696969;
+  font-size: 12px;
+  line-height: 12px;
+  padding-bottom: 10rpx;
+}
+
+.hot_movie_judge-icon{
+  width: 38rpx;
+  height: 38rpx;
+}
+/*横向滑动的scroll-View 样式  */
+
+/*纵向滑动的scroll-View 样式  */
+.hot_movie_scroll_y_box {
+ display: flex;
+ overflow : auto;
+}
+
+.hot_movie_item_box_y{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.hot_movie_box_y {
+ width: 100%;
+ height: 350rpx;
+ display: inline-block;
+}
+
+.hot_movie_image {
+ width: 135rpx;
+ height: 220rpx;
+}
+
+.hot_movie_name{
+  color: #696969;
+  font-size: 12px;
+  line-height: 12px;
+  padding-top: 15rpx;
+  padding-bottom: 10rpx;
+}
+
+.hot_movie_judge{
+  color: #696969;
+  font-size: 12px;
+  line-height: 12px;
+  padding-bottom: 10rpx;
+}
+
+.hot_movie_judge-icon{
+  width: 38rpx;
+  height: 38rpx;
+}
+/*纵向滑动的scroll-View 样式  */

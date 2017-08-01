@@ -1,0 +1,81 @@
+/* pages/sport/sport.wxss */
+.sport-root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: #009688
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 10rpx;
+}
+
+.userinfo-city {
+  color: #fff;
+  font-size: 12px;
+  line-height: 14px;
+  font-style: oblique;
+  margin-bottom: 10rpx;
+}
+
+.sport-banner{
+  width: 100%;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-block-start-color: #757575;
+  border-block-end-color: #757575;
+  border-block-start-width: 10rpx;
+  border-block-end-width: 10rpx;
+}
+
+.banner-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.banner-item-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.banner-item-icon{
+  width: 64rpx;
+  height: 64rpx;
+}
+
+.banner-item-title-text{
+  color: #26A69A;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 8rpx
+}
+
+.banner-item-desc-text{
+  color: #757575;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 5rpx;
+}

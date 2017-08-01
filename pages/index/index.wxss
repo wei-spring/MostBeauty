@@ -1,4 +1,11 @@
 /**index.wxss**/
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -15,36 +22,64 @@
 
 .userinfo-nickname {
   color: #aaa;
-  margin: 20rpx;
 }
 
-/*功能按钮样式 */
-.funcbtn{
-  width: 100%;
-  margin-top: 20rpx;
+.motto-title{
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-around;
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-.funcbtn-item{
+.user-motto{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.funcbtn-item-icon{
-  width: 250rpx;
-  height: 200rpx;
-  margin: 20rpx;
-  border-radius: 5%;
+.section-date{
+  margin: 10px;
+  color: #616161;
+  font-size: 16px;
+  font-style:oblique;
+  line-height: 18px
 }
 
-.funcbtn-item-title{
-  color: #120;
-  margin: 20rpx;
+.user-motto-en {
+  margin: 10px;
+  color: #616161;
+  font-size: 16px;
+  font-style:oblique;
+  line-height: 18px
+}
+
+.user-motto-read{
+  margin: 10px;
+  color: #00b0ff;
+  font-size: 16px;
+  font-style:oblique;
+  line-height: 18px
+}
+
+.user-motto-zh {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #616161;
+  font-size: 12px;
+}
+
+.user-motto-author {
+  margin: 10px;
+  color: #424242;
+  font-size: 13px;
+}
+
+.daily-talk-bg{
+  width: 100%;
+  height: 380rpx;
+  border-radius: 2%;
 }
 
 @font-face {

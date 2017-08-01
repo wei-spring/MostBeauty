@@ -1,0 +1,37 @@
+<view class="contain">
+  <text class="movie-title">{{movieInfo.title}}</text>
+  <view class="movie-hot">
+    <image class="movie-hot-icon" src="../../image/movie-hot.png"></image>
+    <text class="movie-hot-text">热映Top5</text>
+  </view>
+  <scroll-view class="hot_movie_scroll_x_box" scroll-x="true">
+   <view class="hot_movie_box" wx:for="{{hotMovieArray}}">
+    <view class="hot_movie_item_box" bindtap="toDetail" data-item="{{item}}">
+      <image src="{{item.images.medium}}" class="hot_movie_image"></image>
+      <text class="hot_movie_name">{{item.title}}</text>
+      <view class="movie-hot">
+        <image class="hot_movie_judge-icon" src="../../image/judge.png"></image>
+        <text class="hot_movie_judge">平均分 {{item.rating.average}}</text>
+      </view>
+    </view>
+   </view>
+  </scroll-view>
+<!-- 剩余列表  -->
+  <view class="movie-hot">
+    <image class="movie-hot-icon" src="../../image/movie-hot.png"></image>
+    <text class="movie-hot-text">热映必看</text>
+  </view>
+  <scroll-view class="hot_movie_scroll_y_box" scroll-y style="height: 600px;">
+   <view class="hot_movie_box_y" wx:for="{{otherMovieArray}}">
+    <view class="hot_movie_item_box_y" bindtap="toDetail" data-item="{{item}}">
+      <image src="{{item.images.medium}}" class="hot_movie_image"></image>
+      <text class="hot_movie_name">{{item.title}}</text>
+      <view class="movie-hot">
+        <image class="hot_movie_judge-icon" src="../../image/judge.png"></image>
+        <text class="hot_movie_judge">平均分 {{item.rating.average}}</text>
+      </view>
+    </view>
+   </view>
+  </scroll-view>
+  
+</view>

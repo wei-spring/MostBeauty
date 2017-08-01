@@ -1,19 +1,24 @@
-<!--index.wxml-->
+<!--daily.wxml-->
 <view class="container">
-  <view bindtap="bindUserViewTap" class="userinfo">
+  <view bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
-
-  <view class="funcbtn">
-    <view bindtap="bindDailyViewTap" class="funcbtn-item">
-      <image class="funcbtn-item-icon" src="http://otoaiilg3.bkt.clouddn.com/xiaochengxu_daily.jpg" background-size="cover"></image>
-      <text class="funcbtn-item-title">每日一句</text>
+  <view class="user-motto" style="background-color: #fff">
+    <view class="motto-title">
+      <text class="user-motto-en iconfont">{{motto}}</text>
+      <view class="section-date">
+        <picker mode="date" value="{{dailyInfo.dateline}}" start="{{startDate}}" end="{{endDate}}" bindchange="bindDateChange">
+          <view class="picker">
+            <text class="user-motto-read iconfont">[{{dailyInfo.dateline}}]</text>
+          </view>
+        </picker>
+      </view>
     </view>
-    <view bindtap="bindSportViewTap" class="funcbtn-item">
-      <image class="funcbtn-item-icon" src="http://otoaiilg3.bkt.clouddn.com/xiaochengxu_sport.png" background-size="cover"></image>
-      <text class="funcbtn-item-title">微信运动</text>
-    </view>
-  
+    <image class="daily-talk-bg" src="{{dailyInfo.picture2}}" mode="scaleToFill"></image>
+    <text bindtap="bindReadTap" class="user-motto-en iconfont">{{dailyInfo.content}}<text class="user-motto-read iconfont">[发音]</text>
+    </text>
+    <text class="user-motto-zh iconfont">{{dailyInfo.note}}</text>
+    <text class="user-motto-author iconfont">{{dailyInfo.translation}}</text>
   </view>
 </view>

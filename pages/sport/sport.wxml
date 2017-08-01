@@ -1,4 +1,28 @@
-<!--sports.wxml-->
-<view class="container log-list">
-  <text class="log-item">微信运动</text>
+<!--pages/sport/sport.wxml-->
+<view class="sport-root">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text class="userinfo-nickname">运动达人</text>
+    <text class="userinfo-city">{{userInfo.country}}  {{userInfo.province}}  {{userInfo.city}}</text>
+  </view>
+  <!--展示运动信息-->
+  <view class="sport-banner">
+    <view class="banner-item">
+        <view class="banner-item-item">
+          <text class="banner-item-title-text">{{leftTitle}}</text>
+          <text class="banner-item-desc-text">{{leftDesc}}</text>
+        </view>
+        <view class="banner-item-item">
+          <image class="banner-item-icon" src="../../image/calorie.png" mode="aspectFit"/>  
+          <text class="banner-item-desc-text">{{rightDesc}}</text>
+        </view>
+     </view>
+  </view>
+  <!--在地图展示当前位置-->
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" 
+       bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" 
+       bindregionchange="regionchange" show-location style="width: 100%; height: 300px;">
+  </map>
+
 </view>
